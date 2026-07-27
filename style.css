@@ -1,0 +1,703 @@
+*{
+box-sizing:border-box;
+}
+
+body{
+
+margin:0;
+font-family:tahoma;
+direction:rtl;
+background:#f5f5f5;
+color:#222;
+padding-bottom:90px;
+
+}
+
+
+/* هدر */
+
+header{
+
+background:linear-gradient(135deg,#d40000,#ff5252);
+color:white;
+padding:30px 15px;
+border-radius:0 0 35px 35px;
+box-shadow:0 10px 30px #999;
+
+}
+
+
+header h1{
+
+font-size:32px;
+margin:5px;
+
+}
+
+
+
+/* دسته بندی */
+
+h2{
+
+margin:25px 15px 15px;
+font-size:22px;
+color:#d00000;
+
+}
+
+
+
+/* کارت ها */
+
+.products{
+
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:15px;
+padding:15px;
+
+}
+
+
+
+.card{
+
+background:white;
+border-radius:25px;
+padding:18px 10px;
+text-align:center;
+box-shadow:0 8px 20px rgba(0,0,0,.12);
+position:relative;
+overflow:hidden;
+
+}
+
+
+.card::before{
+
+content:"";
+position:absolute;
+top:0;
+right:0;
+width:100%;
+height:5px;
+background:#e00000;
+
+}
+
+
+
+.card h3{
+
+font-size:17px;
+color:#d00000;
+
+}
+
+
+
+.card p{
+
+font-size:18px;
+font-weight:bold;
+color:#d00000;
+
+}
+
+
+
+/* آیکون بالای کارت */
+
+.card h3:first-letter{
+
+font-size:25px;
+
+}
+
+
+
+/* دکمه */
+
+button{
+
+background:linear-gradient(135deg,#d00000,#ff3333);
+border:none;
+color:white;
+padding:12px;
+border-radius:30px;
+font-size:16px;
+box-shadow:0 5px 15px #ff9999;
+cursor:pointer;
+font-weight:bold;
+width:90%;
+}
+
+
+
+button:active{
+
+transform:scale(.95);
+
+}
+
+
+
+/* سبد خرید */
+
+#cart{
+
+margin:15px;
+background:white;
+border-radius:25px;
+padding:20px;
+box-shadow:0 8px 20px #ddd;
+
+}
+
+
+
+/* فرم */
+
+.order-box{
+
+margin:15px;
+background:white;
+border-radius:25px;
+padding:25px;
+box-shadow:0 8px 20px #ddd;
+
+}
+
+
+input{
+
+width:100%;
+padding:15px;
+margin:8px 0;
+border-radius:30px;
+border:1px solid #ddd;
+font-size:15px;
+
+}
+
+
+
+/* منوی پایین موبایل */
+
+
+
+
+
+/* موبایل */
+
+@media(max-width:500px){
+
+.products{
+
+grid-template-columns:repeat(2,1fr);
+gap:12px;
+
+}
+
+.card{
+
+padding:15px 8px;
+
+}
+
+
+
+.top-banner{
+
+background:linear-gradient(135deg,#a00000,#ff3333);
+color:white;
+text-align:center;
+padding:35px 15px;
+border-radius:0 0 40px 40px;
+
+}
+
+
+.logo{
+
+font-size:60px;
+background:white;
+color:#d00000;
+width:100px;
+height:100px;
+line-height:100px;
+border-radius:50%;
+margin:auto;
+box-shadow:0 10px 25px #770000;
+
+}
+
+
+.top-banner h1{
+
+font-size:30px;
+
+}
+
+
+
+.offer{
+
+margin:20px;
+background:white;
+color:#d00000;
+padding:20px;
+border-radius:25px;
+text-align:center;
+font-size:18px;
+font-weight:bold;
+box-shadow:0 8px 20px #ddd;
+
+}
+
+
+
+.quick-menu{
+
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:10px;
+padding:15px;
+
+}
+
+
+
+.quick-menu div{
+
+background:white;
+padding:15px 5px;
+border-radius:20px;
+color:#d00000;
+font-weight:bold;
+box-shadow:0 5px 15px #ddd;
+font-size:14px;
+
+}
+
+
+
+.whatsapp{
+
+position:fixed;
+bottom:80px;
+left:20px;
+background:#25D366;
+color:white;
+width:60px;
+height:60px;
+border-radius:50%;
+font-size:30px;
+display:flex;
+align-items:center;
+justify-content:center;
+box-shadow:0 5px 15px #555;
+
+}.banner{
+
+position:relative;
+margin:15px;
+border-radius:30px;
+overflow:hidden;
+height:220px;
+box-shadow:0 10px 25px #aaa;
+
+}
+
+
+.banner img{
+
+width:100%;
+height:100%;
+object-fit:cover;
+
+}
+
+
+
+.banner-text{
+
+position:absolute;
+top:0;
+right:0;
+left:0;
+bottom:0;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+background:rgba(150,0,0,.45);
+color:white;
+
+}
+
+
+.banner-text h2{
+
+background:none;
+color:white;
+
+}.cart-box{
+
+background:white;
+color:#333;
+margin:20px 10px;
+padding:25px;
+border-radius:30px;
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+}
+
+
+.cart-box h2{
+
+color:#d00000;
+background:none;
+box-shadow:none;
+
+}
+
+
+
+#cart div{
+
+background:#fff3f3;
+margin:10px 0;
+padding:15px;
+border-radius:20px;
+border-right:5px solid #d00000;
+
+}
+
+
+
+#total{
+
+color:#d00000;
+font-size:20px;
+
+}
+
+
+
+#cart button{
+
+background:#222;
+
+}
+
+/* طراحی جدید کارت محصولات */
+
+
+
+
+.card:hover{
+
+transform:translateY(-10px) scale(1.03);
+
+box-shadow:0 15px 35px rgba(0,0,0,.25);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.slider{
+
+margin:15px;
+
+height:220px;
+
+border-radius:30px;
+
+overflow:hidden;
+
+box-shadow:0 10px 25px rgba(0,0,0,.3);
+
+}
+
+
+.slider img{
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+transition:.5s;
+
+}.product-icon{
+
+width:70px;
+height:70px;
+
+margin:10px auto;
+
+border-radius:50%;
+
+background:linear-gradient(135deg,#ff0000,#990000);
+
+color:white;
+
+font-size:35px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+box-shadow:0 8px 20px rgba(0,0,0,.25);
+
+}.product-image{
+
+width:80px;
+height:80px;
+
+object-fit:cover;
+
+border-radius:50%;
+
+margin:10px auto;
+
+display:block;
+
+box-shadow:0 8px 20px rgba(0,0,0,.25);
+
+}
+
+
+
+
+
+
+
+.card button{
+
+margin-top:10px;
+cursor:pointer;
+font-weight:bold;
+
+}
+
+
+.features{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:15px;
+
+padding:20px;
+
+}
+
+
+
+.feature{
+
+background:white;
+
+border-radius:25px;
+
+padding:20px;
+
+text-align:center;
+
+box-shadow:0 8px 20px rgba(0,0,0,.12);
+
+}
+
+
+
+.feature-icon{
+
+font-size:40px;
+
+margin-bottom:10px;
+
+}
+
+
+
+.feature h3{
+
+color:#d00000;
+
+}
+
+
+
+.feature p{
+
+font-size:14px;
+
+color:#555;
+
+}.bottom-menu{
+
+position:fixed;
+
+bottom:0;
+
+right:0;
+
+left:0;
+
+height:75px;
+
+background:white;
+
+display:flex;
+
+justify-content:space-around;
+
+align-items:center;
+
+box-shadow:0 -5px 20px rgba(0,0,0,.15);
+
+z-index:999;
+
+}
+
+
+
+.bottom-menu a{
+
+text-decoration:none;
+
+color:#555;
+
+font-size:13px;
+
+text-align:center;
+
+}
+
+
+
+.bottom-menu a:first-child{
+
+color:#d00000;
+
+}
+
+
+
+.bottom-menu span{
+
+display:block;
+
+margin-top:5px;
+
+
+
+}.reviews{
+
+padding:20px;
+
+}
+
+
+.review-card{
+
+background:white;
+
+border-radius:25px;
+
+padding:20px;
+
+margin:15px 0;
+
+box-shadow:0 8px 20px rgba(0,0,0,.12);
+
+text-align:center;
+
+}
+
+
+
+.stars{
+
+font-size:25px;
+
+margin-bottom:10px;
+
+}
+
+
+
+.review-card p{
+
+color:#555;
+
+font-size:15px;
+
+}
+
+
+
+.review-card b{
+
+color:#d00000;
+
+}.footer{
+    background:#d00000;
+    color:#fff;
+    text-align:center;
+    padding:25px 15px;
+    margin-top:30px;
+}
+
+.footer h3{
+    color:#fff;
+    margin-bottom:10px;
+}
+
+.footer p{
+    margin:8px 0;
+    font-size:14px;
+}.logo img{
+    width:90px;
+    height:90px;
+    object-fit:contain;
+    border-radius:50%;
+}
+
+.whatsapp img{
+    width:60px;
+    height:60px;
+}
+
+.bottom-menu img{
+    width:28px;
+    height:28px;
+    display:block;
+    margin:auto;
+}
+
+.feature-icon img{
+    width:55px;
+    height:55px;
+}
+
+.quick-menu img{
+    width:45px;
+    height:45px;
+}

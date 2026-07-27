@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>فروشگاه موبایل قائم</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+  
+<div class="slider">
+
+<img id="bannerImage" src="banner1.jpg">
+
+</div>
+
+<header class="top-banner">
+
+<div class="logo">
+<img src="logo.png" alt="لوگو">
+</div>
+
+
+<h1>
+فروشگاه موبایل قائم
+</h1>
+
+
+<p>
+🚀 فروش فالوور | لایک | ویو | پیج آماده
+</p>
+
+
+<p>
+👤 مدیریت: مهدی سمندری
+</p>
+
+
+<p>
+📞 09360496995
+</p>
+
+
+<p>
+📍 کرمان - کهنوج - خیابان آزادی - پاساژ آزادی
+</p>
+
+
+</header>
+
+
+
+<div class="offer">
+
+🔥 پیشنهاد ویژه 🔥
+
+<br>
+
+خدمات اینستاگرام با پشتیبانی سریع
+
+<br>
+
+🟢 واتساپ: 09360496995
+
+</div>
+
+<div class="features">
+
+
+<div class="feature">
+
+<div class="feature-icon">
+⚡
+</div>
+
+<h3>
+تحویل سریع
+</h3>
+
+<p>
+انجام سفارش در کوتاه‌ترین زمان
+</p>
+
+</div>
+
+
+
+<div class="feature">
+
+<div class="feature-icon">
+🟢
+</div>
+
+<h3>
+پشتیبانی واتساپ
+</h3>
+
+<p>
+پاسخگویی مستقیم
+</p>
+
+</div>
+
+
+
+<div class="feature">
+
+<div class="feature-icon">
+🔒
+</div>
+
+<h3>
+خرید امن
+</h3>
+
+<p>
+ثبت سفارش آسان
+</p>
+
+</div>
+
+
+
+<div class="feature">
+
+<div class="feature-icon">
+⭐
+</div>
+
+<h3>
+رضایت مشتری
+</h3>
+
+<p>
+خدمات حرفه‌ای
+</p>
+
+</div>
+
+
+</div>
+
+
+<div class="quick-menu">
+
+
+<div>
+👥
+<br>
+فالوور
+</div>
+
+
+<div>
+❤️
+<br>
+لایک
+</div>
+
+
+<div>
+👁
+<br>
+ویو
+</div>
+
+
+<div>
+🔥
+<br>
+پیج
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="search-box">
+
+<input 
+id="searchInput"
+type="text"
+placeholder="🔍 جستجوی محصول..."
+onkeyup="searchProduct()">
+
+</div>
+
+
+
+
+
+<!-- محصولات -->
+
+<h2>
+👥 فالوور اینستاگرام
+</h2>
+
+<div class="products" id="products">
+
+
+<div class="card product">
+
+<img class="product-image" src="follower.png">
+
+<h3>1000 فالوور</h3>
+
+<div class="price-tag">
+💰 قیمت ویژه
+</div>
+
+<p>
+300,000 تومان
+</p>
+
+<button onclick="addCart('1000 فالوور',300000)">
+🛒 خرید
+</button>
+
+</div>
+
+
+
+<div class="card product">
+
+<img class="product-image" src="follower.png">
+
+<h3>5000 فالوور</h3>
+
+<div class="price-tag">
+💰 قیمت ویژه
+</div>
+
+<p>
+1,500,000 تومان
+</p>
+
+<button onclick="addCart('5000 فالوور',1500000)">
+🛒 خرید
+</button>
+
+</div>
+
+
+
+<div class="card product">
+
+<img class="product-image" src="follower.png">
+
+<h3>10000 فالوور</h3>
+
+<div class="price-tag">
+💰 قیمت ویژه
+</div>
+
+<p>
+3,000,000 تومان
+</p>
+
+<button onclick="addCart('10000 فالوور',3000000)">
+🛒 خرید
+</button>
+
+</div>
+
+
+</div>
+
+
+
+
+
+<h2>
+❤️ لایک اینستاگرام
+</h2>
+
+
+<div class="products">
+
+
+<div class="card product">
+
+<img class="product-image" src="like.png">
+
+<h3>1000 لایک</h3>
+
+<div class="price-tag">
+💰 قیمت ویژه
+</div>
+
+<p>
+700,000 تومان
+</p>
+
+<button onclick="addCart('1000 لایک',700000)">
+🛒 خرید
+</button>
+
+</div>
+
+
+
+<div class="card product">
+
+<img class="product-image" src="like.png">
+
+<h3>5000 لایک</h3>
+
+<div class="price-tag">
+💰 قیمت ویژه
+</div>
+
+<p>
+3,000,000 تومان
+</p>
+
+<button onclick="addCart('5000 لایک',3000000)">
+🛒 خرید
+</button>
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<h2>
+👁 ویو اینستاگرام
+</h2>
+
+
+<div class="products">
+
+
+<div class="card product">
+
+<img class="product-image" src="story.png">
+
+<h3>10000 ویو</h3>
+
+<div class="price-tag">
+💰 قیمت ویژه
+</div>
+
+<p>
+700,000 تومان
+</p>
+
+<button onclick="addCart('10000 ویو',700000)">
+🛒 خرید
+</button>
+
+</div>
+
+
+
+<div class="card product">
+
+<img class="product-image" src="story.png">
+
+<h3>50000 ویو</h3>
+
+<div class="price-tag">
+💰 قیمت ویژه
+</div>
+
+<p>
+3,000,000 تومان
+</p>
+
+<button onclick="addCart('50000 ویو',3000000)">
+🛒 خرید
+</button>
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+<h2>
+🔥 پیج‌های آماده اینستاگرام
+</h2>
+
+
+<div class="products">
+
+
+
+<div class="card product">
+
+<img class="product-image" src="page.png">
+
+<h3>@fariba_uz</h3>
+
+<div class="price-tag">
+💰 قیمت ویژه
+</div>
+
+<p>
+38,000,000 تومان
+</p>
+
+<button onclick="addCart('@fariba_uz',38000000)">
+🛒 خرید
+</button>
+
+</div>
+
+
+
+<div class="card product">
+
+<img class="product-image" src="page.png">
+
+<h3>@kl.lt</h3>
+
+<div class="price-tag">
+💰 قیمت ویژه
+</div>
+
+<p>
+28,000,000 تومان
+</p>
+
+<button onclick="addCart('@kl.lt',28000000)">
+🛒 خرید
+</button>
+
+</div>
+
+
+
+<div class="card product">
+
+<img class="product-image" src="page.png">
+
+<h3>@sharare_bx</h3>
+
+<div class="price-tag">
+💰 قیمت ویژه
+</div>
+
+<p>
+14,000,000 تومان
+</p>
+
+<button onclick="addCart('@sharare_bx',14000000)">
+🛒 خرید
+</button>
+
+</div>
+
+
+
+<div class="card product">
+
+<img class="product-image" src="page.png">
+
+<h3>@bita_4n</h3>
+
+<div class="price-tag">
+💰 قیمت ویژه
+</div>
+
+<p>
+9,500,000 تومان
+</p>
+
+<button onclick="addCart('@bita_4n',9500000)">
+🛒 خرید
+</button>
+
+</div>
+
+
+
+<div class="card product">
+
+<img class="product-image" src="page.png">
+
+<h3>@kl.lt.2</h3>
+
+<div class="price-tag">
+💰 قیمت ویژه
+</div>
+
+<p>
+8,500,000 تومان
+</p>
+
+<button onclick="addCart('@kl.lt.2',8500000)">
+🛒 خرید
+</button>
+
+</div>
+
+
+
+<div class="card product">
+
+<img class="product-image" src="page.png">
+
+<h3>@shagaygh_bqe</h3>
+
+<div class="price-tag">
+💰 قیمت ویژه
+</div>
+
+<p>
+6,500,000 تومان
+</p>
+
+<button onclick="addCart('@shagaygh_bqe',6500000)">
+🛒 خرید
+</button>
+
+</div>
+
+
+
+<div class="card product">
+
+<img class="product-image" src="page.png">
+
+<h3>@sadaf______mohammadi</h3>
+
+<div class="price-tag">
+💰 قیمت ویژه
+</div>
+
+<p>
+4,500,000 تومان
+</p>
+
+<button onclick="addCart('@sadaf______mohammadi',4500000)">
+🛒 خرید
+</button>
+
+</div>
+
+
+
+<div class="card product">
+
+<img class="product-image" src="page.png">
+
+<h3>@sara_clip_fun99</h3>
+
+<div class="price-tag">
+💰 قیمت ویژه
+</div>
+
+<p>
+3,500,000 تومان
+</p>
+
+<button onclick="addCart('@sara_clip_fun99',3500000)">
+🛒 خرید
+</button>
+
+</div>
+
+
+
+<div class="card product">
+
+<img class="product-image" src="page.png">
+
+<h3>@senson017</h3>
+
+<div class="price-tag">
+💰 قیمت ویژه
+</div>
+
+<p>
+2,000,000 تومان
+</p>
+
+<button onclick="addCart('@senson017',2000000)">
+🛒 خرید
+</button>
+
+</div>
+
+
+</div>
+
+
+
+<div class="cart-box" id="cartSection">
+
+
+<h2>
+🛒 سبد خرید
+</h2>
+
+
+<div id="cart">
+
+🛒 سبد خرید خالی است
+
+</div>
+
+
+
+<h3 id="total">
+
+💰 جمع کل: 0 تومان
+
+</h3>
+
+
+
+<button onclick="clearCart()">
+
+🗑 پاک کردن سبد
+
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+
+<div class="order-box">
+
+
+<h2>
+📝 ثبت سفارش
+</h2>
+
+
+
+<input 
+id="customerName"
+type="text"
+placeholder="👤 نام و نام خانوادگی">
+
+
+
+<input 
+id="phone"
+type="text"
+placeholder="📞 شماره تماس">
+
+
+
+<input 
+id="instagram"
+type="text"
+placeholder="📸 آیدی اینستاگرام">
+
+
+
+<button onclick="sendOrder()">
+
+✅ ثبت سفارش واتساپ
+
+</button>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="whatsapp">
+<a href="https://wa.me/989360496995">
+<img src="whatsapp.png" alt="واتساپ">
+</a>
+</div>
+
+
+
+
+
+
+<div class="reviews">
+
+
+<h2>
+⭐ نظر مشتریان
+</h2>
+
+
+
+<div class="review-card">
+
+
+<div class="stars">
+⭐⭐⭐⭐⭐
+</div>
+
+
+<p>
+خدمات عالی بود، سفارش سریع انجام شد.
+</p>
+
+
+<b>
+👤 علی
+</b>
+
+
+</div>
+
+
+
+
+<div class="review-card">
+
+
+<div class="stars">
+⭐⭐⭐⭐⭐
+</div>
+
+
+<p>
+پشتیبانی واتساپ خیلی خوب بود.
+</p>
+
+
+<b>
+👤 رضا
+</b>
+
+
+</div>
+
+
+
+
+<div class="review-card">
+
+
+<div class="stars">
+⭐⭐⭐⭐
+</div>
+
+
+<p>
+پیج خریداری شده طبق توضیحات بود.
+</p>
+
+
+<b>
+👤 محمد
+</b>
+
+
+</div>
+
+
+</div>
+<div class="bottom-menu">
+
+
+<a href="#">
+<img src="home.png" alt="خانه">
+<span>
+خانه
+</span>
+</a>
+
+
+<a href="#products">
+<img src="products.png" alt="محصولات">
+<span>
+محصولات
+</span>
+</a>
+
+
+<a href="#cartSection">
+<img src="cart.png" alt="سبد خرید">
+<span>
+سبد خرید
+</span>
+</a>
+
+
+<a href="https://wa.me/989360496995">
+<img src="whatsapp.png" alt="واتساپ">
+<span>
+واتساپ
+</span>
+</a>
+
+
+<a href="tel:09360496995">
+<img src="phone.png" alt="تماس">
+<span>
+تماس
+</span>
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+    <h3>فروشگاه موبایل قائم</h3>
+    <p>📍 کرمان - کهنوج</p>
+    <p>📞 09360496995</p>
+    <p>🟢 ثبت سفارش فقط از طریق واتساپ</p>
+    <p>© تمامی حقوق محفوظ است.</p>
+</footer>
+
+<script src="script.js"></script>
+
+
+
+</body>
+
+</html>
